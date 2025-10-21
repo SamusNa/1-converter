@@ -7,13 +7,11 @@ const usdToEUR = 0.8553
 const usdToRUB = 80.43
 const eurToRUB = usdToRUB/usdToEUR
 
-
 func main() {
-	baseCurrency := getUserInputBase()
+	baseCurrency = getUserInputBase()
 	sum := getUserInputSum()
 	toCurrency := getUserInputToCurrency()
 	result, currency := converter(baseCurrency, sum, toCurrency)
-	//fmt.Printf("%.2f RUB\n", eurToRUB)
 	fmt.Printf("%.2f %v\n", result, currency)
 }
 
